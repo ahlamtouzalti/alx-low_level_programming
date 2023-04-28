@@ -1,24 +1,19 @@
-/**
- * main - causes an infinite loop
- * Return: 0
+/* This a header file containing declarations
+ * for functions defined 0x03-debugging
+ * tasks and directory
+ * This is like creating my own library with declared functions
+ * The tasks defines  the functions
+ * The declarations are enclosed with #ifndef,#define,#endif
+ * to make them read only once if included more than once.
  */
 
-int main(void)
-{
-	int i;
+#ifndef MAIN_H
+#define MAIN_H
+#include <stdio.h>
 
-	printf("Infinite loop incoming :(\n");
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+void print_remaining_days(int month, int day, int year);
+int convert_day(int month, int day);
 
-	/**
-	* i = 0;
-	*
-	* while (i < 10)
-	* {
-	*	putchar(i);
-	* }
-	*/
-
-	printf("Infinite loop avoided! \\o/\n");
-
-	return (0);
-}
+#endif
